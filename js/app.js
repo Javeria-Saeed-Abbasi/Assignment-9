@@ -102,40 +102,102 @@
 
 // alert(stringsWithOutVovels);
 
+
+
 // ************************Task 7
-function findOccurrences() {
-    var str = "Please read this application and give me gratuity";
-    var count = 0;
-    var haveSeenVowel = false;
+// function findOccurrences() {
+//     var str = "Please read this application and give me gratuity";
+//     var count = 0;
+//     var seenVowels = false;
   
-    for (const letter of str.toLowerCase()) {
-      switch (letter) {
-        case 'a':
-        case 'e':
-        case 'i':
-        case 'o':
-        case 'u':
-          {
-            if (haveSeenVowel) {
-              count++;
-              haveSeenVowel = false;
+//     for (const letter of str.toLowerCase()) {
+//       switch (letter) {
+//         case 'a':
+//         case 'e':
+//         case 'i':
+//         case 'o':
+//         case 'u':
+//           {
+//             if (seenVowels) {
+//               count++;
+//               seenVowels = false;
               
-            } else {
-              haveSeenVowel = true;
+//             } else {
+//               seenVowels = true;
               
-            }
-            break;
-          }
-        default:
-          haveSeenVowel = false
+//             }
+//             break;
+//           }
+//         default:
+//           seenVowels = false
          
-      }
-    }
+//       }
+//     }
   
-    return count.toString();
-  }
+//     document.write ("The occurence of vowels in STRING is : "+count);
+//   }
   
-  console.log(findOccurrences());
+// findOccurrences();
+
+
+// ************************Task 8
+// var km =+prompt("Enter a distance in km ");
+// document.write("The distance b/w cities is: "+ km +" km"+"<br/>");
+// function meter(){
+//   var m = km*1000;
+//   document.write("The distance of cities in meter is: "+ m +" m"+"<br/>");
+// }
+// function feet(){
+//   var f = km*3280.84;
+//   document.write("The distance of cities in feet is: "+ f +" ft"+"<br/>");
+// }
+// function inches(){
+//   var i = km*39370.08;
+//   document.write("The distance of cities in inches is: "+ i+" inch"+"<br/>");
+// }
+// function centimeter(){
+//   var cm = km*100;
+//   document.write("The distance of cities in centi-meter is: "+ cm +" cm"+"<br/>");
+// }
+// meter();
+// feet();
+// inches();
+// centimeter();
+
+
+// ************************Task 9
+// var workingHours = +prompt("Enter the woerking hours of employee");
+
+// function overTime(){
+//     if (workingHours>40) {
+//       var over_time = workingHours - 40;
+//       var overTimePay= over_time * 12;
+//       document.write("Over Time pay is: "+ overTimePay+ "<br/>");
+//     }
+//     else{
+//             document.write("You have to work for more than 40 hours to get over time pay");
+//     }
+ 
+// }
+// overTime();
+
+
+
+// ************************Task 10
+// var amount = +prompt("Please Enter Amount for Withdraw :");
+
+// function Withdraw(){
+//   var hd = amount/100;
+//   document.write("The amount of hundred notes will be: "+ Math.floor(hd)+ "<br/>");
+//   var fifty = (amount%100)/50;
+//   document.write("The amount of fifty notes will be: "+ Math.floor(fifty)+ "<br/>");
+//   var ten = (((amount % 100) % 50) / 10)
+//   document.write("The amount of ten notes will be: "+ ten+ "<br/>");
+//   var remain=  (((amount % 100) % 50) % 10);
+//   document.write("The remaining amount of notes will be: "+ remain+ "<br/>"+"<br/>");
+//   document.write("you will have "+ Math.floor(hd)+" hundreds notes" +" "+Math.floor(fifty)+" fifty notes "+  ten + " ten notes."+"<br/>");
+// }
+// Withdraw();
 
 
 
