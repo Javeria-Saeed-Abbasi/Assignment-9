@@ -201,3 +201,41 @@
 
 
 
+// ====================================== CHAPTER #  43-48   ==============================================
+// ************************Task 1
+// function popup(){
+//     alert("welcome");
+// }
+
+
+// ************************Task 2
+// function popup(){
+//     alert("Thanks for purchasing a phone from us!");
+// }
+
+
+
+// ************************Task 3
+// function delet(){
+//     var td = event.target.parentNode; 
+//     console.log(td);
+//       var tr = td.parentNode; // the row to be removed
+//       tr.parentNode.removeChild(tr);
+// }
+
+
+
+// ************************Task 4
+// function afterimg(){
+//      var image= document.getElementById ('img');
+//      image.src = "images/nokia.jpg";
+// }
+// function beforeimg(){
+//     var image= document.getElementById ('img');
+//     image.src = "images/huawei.jpg";
+// }
+
+
+// ************************Task 5
+
+
