@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CUSTOM js -->
     <script src="js/app.js" rel="text/javascript"></script>
+    <!--CUSTOM css -->
+    <script src="css/style.css" rel="stylesheet"></script>
     <!-- Boostrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Assignment 9</title>
 </head>
 <body>
     <!-- // ====================================== CHAPTER #  43-48   ============================================== -->
-<!-- // ************************Task 1 -->
+
+
+    <!-- // ************************Task 1 -->
 <!-- <div>
     <a href="JavaScript:void(0)" onclick="popup()">google</a>
 </div> -->
+
+
 
 
 
@@ -28,6 +34,8 @@
 <br/>
 <br/>
 </div> -->
+
+
 
 
 <!-- // ************************Task 3 -->
@@ -72,6 +80,7 @@
 
 
 
+
 <!-- // ************************Task 4 -->
 <!-- <div class="container bg-dark">
 <br/>
@@ -83,7 +92,176 @@
 
 
 
+
 <!-- // ************************Task 5 -->
+
+<!-- <div class="container bg-warning" id="counter">
+  <br/>
+  <center>
+    <button class="btn-success" onclick="increase()">Increase(+)</button>
+    <input type="text" id="textbox" value="0" class="text-center h3"/>
+    <button class="btn-danger" onclick="decrease()">Decrease(-)</button>
+  </center>
+  <br/>
+</div> -->
+
+
+
+
+<!-- // ====================================== CHAPTER #  49-52   ==============================================
+// ************************Task 1  -->
+<!-- <div class="container register-form bg-dark text-center">
+  <form onsubmit="signupForm();">
+      <div class="note">
+          <h2 class="text-white">Sign Up Form</h2>
+      </div>
+
+      <div class="form-content bg-warning pb-3 pt-5 pr-5 pl-5">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="name" placeholder="Your Name *" value=""/>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="phone" placeholder="Phone Number *" value=""/>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <input type="password" class="form-control" id="passwd" placeholder="Your Password *" value=""/>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="form-control" id="email" placeholder="Your Email *" value=""/>
+                  </div>
+              </div>
+          </div>
+          <button type="submit" value="submit" class="btnSubmit btn-success">Submit</button>
+      </div>
+  </form>
+  <br/>
+</div>
+<br/>
+<div class="container bg-primary text-white  w-50" id="signup">
+
+<label><h4>Name:</h4></label><br/>
+<h5 class="text-warning"><span id='name1' ></span></h5>
+
+<label><h4>Phone:</h4></label><br/>
+<h5 class="text-warning"><span id="phone1" ></span></h5>
+
+<label><h4>Email:</h4></label><br/>
+<h5 class="text-warning"><span id="email1" ></span></h5>
+</div> -->
+
+
+
+<!-- // ************************Task 2  -->
+<!-- <div class="container bg-info">
+  <br/>
+  <center>
+  <img src="images/huawei.jpg" id="img" class="rounded "alt="..."/>
+  <br/>
+  <br/>
+  <div class="text-justify w-50">
+  <p id="lessText">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  </p>
+  </div>
+  <button class="btn-warning" onclick="expandText()">Read More</button>
+  </center>
+  <br/>
+
+</div> -->
+
+
+
+
+
+<!-- // ************************Task 3 ( HTML included) -->
+<div class="container register-form bg-warning pb-5 pt-5 text-center">
+  <form class="form bg-info pr-3 pl-3 pb-5 pt-5" onsubmit="event.preventDefault();">
+
+      <div class="note h2 text-center">
+          <p>Student Registration Form.</p>
+      </div>
+
+      <div class="form-content">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Your Name *" value="" id="stdName"/>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Your Class *" value="" id="stdClass"/>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Your Marks *" value="" id="stdMarks"/>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Your Subject *" value="" id="stdSubj"/>
+                  </div>
+              </div>
+          </div>
+          <button type="submit" onclick= "studentForm();" class="btnSubmit btn-secondary">Submit</button>
+      </div>
+  </form>
+</div>
+
+<br/<br/><br/<br/>
+<div class="container">
+    <table class="table table-dark" class="list" id="displayTable">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Class</th>
+            <th scope="col">Marks</th>
+            <th scope="col">Subject</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" id="stdName1">Jiya</th>
+            <td id="stdClass1">X</td>
+            <td id="stdMarks1">10</td>
+            <td id="stdSubj1">English</td>
+            <td><button class="btn btn-danger" onclick="delet()">DELETE</button></td>
+            <td><button class="btn btn-success" onclick="delet()">EDIT</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Abbasi</th>
+            <td>VIII</td>
+            <td>9</td>
+            <td>English</td>
+            <td><button class="btn btn-danger" onclick="delet()">DELETE</button></td>
+            <td><button class="btn btn-success" onclick="delet()">EDIT</button></td>
+
+          </tr>
+          <tr>
+            <th scope="row">Javeria</th>
+            <td>XII</td>
+            <td>10</td>
+            <td>English</td>
+            <td><button class="btn btn-danger" onclick="delet()">DELETE</button></td>
+            <td><button class="btn btn-success" onclick="delet()">EDIT</button></td>
+
+          </tr>
+          <tr>
+            <th scope="row">Khan</th>
+            <td>V</td>
+            <td>8</td>
+            <td>English</td>
+            <td><button class="btn btn-danger" onclick="delet()">DELETE</button></td>
+            <td><button class="btn btn-success" onclick="delet()">EDIT</button></td>
+
+          </tr>
+        </tbody>
+      </table>
+
+</div>
+<!-- =========== EDIT Form ============== -->
 
 </body>
 </html>

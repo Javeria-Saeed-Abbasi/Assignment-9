@@ -202,20 +202,20 @@
 
 
 // ====================================== CHAPTER #  43-48   ==============================================
-// ************************Task 1
+// ************************Task 1 ( HTML included)
 // function popup(){
 //     alert("welcome");
 // }
 
 
-// ************************Task 2
+// ************************Task 2  ( HTML included)
 // function popup(){
 //     alert("Thanks for purchasing a phone from us!");
 // }
 
 
 
-// ************************Task 3
+// ************************Task 3  ( HTML included)
 // function delet(){
 //     var td = event.target.parentNode; 
 //     console.log(td);
@@ -225,7 +225,7 @@
 
 
 
-// ************************Task 4
+// ************************Task 4  ( HTML included)
 // function afterimg(){
 //      var image= document.getElementById ('img');
 //      image.src = "images/nokia.jpg";
@@ -236,6 +236,102 @@
 // }
 
 
-// ************************Task 5
+// ************************Task 5  ( HTML included)
+
+// var count =0;
+//   function increase(){
+//     count++;
+//     document.getElementsByTagName("input")[0].value = count;
+//     // console.log(count);
+//   }
+//   function decrease(){
+//     count--;
+//     document.getElementsByTagName("input")[0].value = count;
+//     // console.log(count);
+//   }
+
+
+
+// ====================================== CHAPTER #  49-52   ==============================================
+// ************************Task 1 ( HTML included)
+
+// function signupForm(){
+
+//     //for name;  
+    
+//     document.getElementById("name1").innerHTML= name;
+//     name = document.getElementById("name").value;
+   
+
+//      //for phone; 
+     
+//      document.getElementById("phone1").innerHTML= document.getElementById("phone").value;
+    
+
+//     //for email; 
+        
+//     document.getElementById("email1").innerHTML= document.getElementById("email").value;
+    
+    
+// }
+
+
+
+// ************************Task 2 ( HTML included)
+
+// function expandText(){
+//     var expandPara= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+//     document.getElementById("lessText").innerHTML = expandPara;
+// }
+
+
+
+
+// ************************Task 3 ( HTML included)
+function studentForm(){
+    var formData = readFormData();
+    insertNewRecord(formData);
+    resetForm();
+  }
+  function readFormData(){
+    var formData = {};
+    formData["stdName"] = document.getElementById("stdName").value
+    formData["stdClass"] = document.getElementById("stdClass").value;
+    formData["stdMarks"] = document.getElementById("stdMarks").value;
+    formData["stdSubj"] = document.getElementById("stdSubj").value;
+    return formData;
+  }
+  function insertNewRecord(data){
+    var table=  document.getElementById("displayTable").getElementsByTagName('tbody')[0];
+    var newRow = table.insertRow(table.length);
+    cell1 = newRow.insertCell(0);
+    cell1.innerHTML = data.stdName;
+    cell2 = newRow.insertCell(1);
+    cell2.innerHTML = data.stdClass;
+    cell3 = newRow.insertCell(2);
+    cell3.innerHTML = data.stdMarks;
+    cell4 = newRow.insertCell(3);
+    cell4.innerHTML = data.stdSubj;
+    cell5 = newRow.insertCell(4);;
+    cell5.innerHTML = "<button class='btn btn-danger' onclick='delet()' >Delete</button>";
+    cell6 = newRow.insertCell(5);
+    cell6.innerHTML = "<button class='btn btn-success' onclick=''>Edit</button>";
+
+  }
+
+function resetForm(){
+  document.getElementById("stdName").value = "";
+  document.getElementById("stdClass").value = "";
+  document.getElementById("stdMarks").value = "";
+  document.getElementById("stdSubj").value = "";
+}
+  function delet(){
+    var td = event.target.parentNode; 
+    console.log(td);
+      var tr = td.parentNode; // the row to be removed
+      tr.parentNode.removeChild(tr);
+}
+
+
 
 
