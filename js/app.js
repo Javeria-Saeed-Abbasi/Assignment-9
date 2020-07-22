@@ -288,6 +288,7 @@
 
 
 // ************************Task 3 ( HTML included)
+
 function studentForm(){
     var formData = readFormData();
     insertNewRecord(formData);
@@ -315,7 +316,7 @@ function studentForm(){
     cell5 = newRow.insertCell(4);;
     cell5.innerHTML = "<button class='btn btn-danger' onclick='delet()' >Delete</button>";
     cell6 = newRow.insertCell(5);
-    cell6.innerHTML = "<button class='btn btn-success' onclick=''>Edit</button>";
+    cell6.innerHTML = "<button class='btn btn-success' data-toggle='modal' data-target='#exampleModal' onclick='editRow()'>Edit</button>";
 
   }
 
@@ -324,7 +325,27 @@ function resetForm(){
   document.getElementById("stdClass").value = "";
   document.getElementById("stdMarks").value = "";
   document.getElementById("stdSubj").value = "";
+  
+
 }
+ 
+function editRow(e){
+  var val = e.parentNode.firstChild.nodeValue;
+    console.log(val);
+}
+// function onEdit(td) {
+//   selectedRow = td.parentElement.parentElement;
+//   document.getElementById("stdName").value = selectedRow.cells[0].innerHTML;
+//   document.getElementById("stdClass").value = selectedRow.cells[1].innerHTML;
+//   document.getElementById("stdMarks").value = selectedRow.cells[2].innerHTML;
+//   document.getElementById("stdSubj").value = selectedRow.cells[3].innerHTML;
+// }
+// function updateRecord(formData) {
+//   selectedRow.cells[0].innerHTML = formData.stdName;
+//   selectedRow.cells[1].innerHTML = formData.stdClass;
+//   selectedRow.cells[2].innerHTML = formData.stdMarks;
+//   selectedRow.cells[3].innerHTML = formData.stdSubj;
+// }
   function delet(){
     var td = event.target.parentNode; 
     console.log(td);
@@ -332,6 +353,35 @@ function resetForm(){
       tr.parentNode.removeChild(tr);
 }
 
+
+
+
+
+// ====================================== CHAPTER #  53-58   ==============================================
+// ************************Task 1 ( HTML included)
+// function popUp(){
+//   var img1 = document.getElementById ('img1');
+//   document.getElementById('modal').innerHTML = img1;
+  
+// }
+
+
+
+
+
+
+
+
+// ====================================== CHAPTER #  58-67   ==============================================
+// ************************Task 1 ( HTML included)
+  // var mainDiv = document.getElementById("main-content");
+  // console.log(mainDiv.nodeType);
+
+
+
+
+  
+  
 
 
 

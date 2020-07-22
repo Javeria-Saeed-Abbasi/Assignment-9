@@ -9,12 +9,13 @@
     <script src="css/style.css" rel="stylesheet"></script>
     <!-- Boostrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Assignment 9</title>
 </head>
 <body>
     <!-- // ====================================== CHAPTER #  43-48   ============================================== -->
-
-
     <!-- // ************************Task 1 -->
 <!-- <div>
     <a href="JavaScript:void(0)" onclick="popup()">google</a>
@@ -182,7 +183,7 @@
   <form class="form bg-info pr-3 pl-3 pb-5 pt-5" onsubmit="event.preventDefault();">
 
       <div class="note h2 text-center">
-          <p>Student Registration Form.</p>
+          <p>Student Details Form.</p>
       </div>
 
       <div class="form-content">
@@ -261,7 +262,117 @@
       </table>
 
 </div>
-<!-- =========== EDIT Form ============== -->
+<!-- =========== Modal Form ============== -->
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Student Details Form.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- modal body -->
+      <div class="modal-body">
+
+        <form class="form bg-info pr-3 pl-3 pb-5 pt-5" onsubmit="">
+    
+          <div class="form-content">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Your Name *" value="" id="stdNameUpdate"/>
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Your Class *" value="" id="stdClassUpdate"/>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Your Marks *" value="" id="stdMarksUpdate"/>
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Your Subject *" value="" id="stdSubjUpdate"/>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- // ====================================== CHAPTER #  53-58   ==============================================
+// ************************Task 1 -->
+
+<!-- <div class="container bg-dark">
+<br/>
+<div class="row text-center">
+  <div class="col-md-3 col-lg-3 col-lg-3">
+    <img src="images/2.jpg" onclick="popUp()" id="img1"  data-toggle="modal" data-target="#exampleModal"class="rounded "alt="..." width="150px" height="100px"/>
+  </div>
+  <div class="col-md-3 col-lg-3">
+    <img src="images/3.jpg"  onclick="" data-toggle="modal" data-target="#exampleModal"class="rounded " alt="..." width="150px" height="100px">
+  </div>
+  <div class="col-md-3 col-lg-3">
+    <img src="images/4.png"  onclick="" data-toggle="modal" data-target="#exampleModal"class="rounded " alt="..." width="150px" height="100px">
+  </div>
+  <div class="col-md-3 col-lg-3">
+    <img src="images/5.jpg" onclick="" data-toggle="modal" data-target="#exampleModal" class="rounded " alt="..." width="150px" height="100px">
+  </div>
+</div>
+
+<br/>
+</div>
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-transparent">
+      <div class="modal-header">
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+    </div>
+  </div>
+</div> --> -->
+
+
+
+
+
+<!-- // ====================================== CHAPTER #  58-67   ==============================================
+// ************************Task 1  -->
+<!-- <div><h1>DOM</h1><div id=”form-content” class=”content”><label for=”first-name”>First Name</label> <input type=”text” id=”first-name”/> <label for=”last-name”>Last Name</label> <input type=”text” id=”last-name”/> <label for=”email”>Email</label> <input type=”text” id=”email”/> </div><div id=”main-content” class=”content”> <p class=”render”> First Name : Alex</p><p class=”render” id=”lastName”>Last Name: Bank</p><p class=”render”> Email : alexbank@example.com</p><p class=”render”> Country : Pakistan </p><p class=”render”> contact : +92 300 1234567</p></div></div> -->
+
+
+
+
 
 </body>
 </html>
